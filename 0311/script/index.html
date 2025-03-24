@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 소개</title>
+</head>
+
+<body>
+
+    <div class="container" id="profile-container">
+    </div>
+
+    <script>
+        const userInfo = {
+            name: "신성우",
+            job: "대학생",
+            interests: "코딩, 게임, 여행",
+            imageUrl: "/image/스폰지밥.png"
+        };
+
+        const container = document.getElementById("profile-container");
+
+        container.innerHTML = `
+            <img src="${userInfo.imageUrl}" alt="프로필 이미지">
+            <h1>안녕하세요! 저는 ${userInfo.name}입니다.</h1>
+            <p>직업: ${userInfo.job}</p>
+            <p>관심사: ${userInfo.interests}</p>
+            <p>저의 웹페이지에 방문해주셔서 감사합니다!</p>
+        `;
+    </script>
+
+</body>
+
+</html>
